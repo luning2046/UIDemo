@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navbar"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="@drawable/icon_actionbar_bg_"
+    >
+
+    <ImageView
+        android:id="@+id/imgbtn_left"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"        
+        android:paddingLeft="0dp"
+        android:src="@drawable/icon_back"
+        android:scaleType="center"
+        />
+    
+    <TextView
+        android:id="@+id/txt_title"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        style="@style/style_title" />
+         <!-- android:background="@drawable/cell_bg" -->
+
+    <View
+        android:id="@+id/navbarRightSpan"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/navbarRighTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_title"
+        android:layout_alignBottom="@+id/txt_title"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="+新增"
+        android:visibility="gone" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txt_title"
+        android:layout_marginRight="3dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_map" />
+
+    <ImageView
+        android:id="@+id/iv_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txt_title"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_dropdown" />
+
+</RelativeLayout>
